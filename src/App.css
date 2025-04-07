@@ -1,0 +1,11 @@
+.navigation{
+background-color: white;
+}
+
+.custom-container{
+    background-color: aqua;
+    margin: 1rem;
+    height: auto;
+    overflow: hidden;
+
+}
