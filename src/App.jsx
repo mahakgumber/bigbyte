@@ -2,44 +2,49 @@ import Navbar3 from './components/Navbar3'
 import { WavyBackground } from './components/ui/WavyBackground'
 import { FeaturesSectionDemo } from './components/ui/FeaturesSectionDemo'
 import bgImage from "/images/hero/bg.jpeg"
-// import { TimeLine } from './components/ui/Timeline'
-// import {TimelineEntry} from "./components/ui/TimelineEntry"
-// import { GlowingEffect } from './components/ui/GlowingEffect'
-// import { EvervaultCard } from './components/ui/EvervaultCard'
-// import { LayoutGrid } from './components/ui/LayoutGrid'
-// import { MenuItem } from './components/ui/MenuItem'
+import { BackgroundGradient } from './components/ui/BackgroundGradient'
+import AboutData from './components/ui/AboutData'
+import HowWeWork from './components/ui/HowWeWork'
+import { AnimatedTestimonials } from './components/ui/AnimatedTestimonials'
+import { testimonials } from './components/ui/testimonials'
+import { HoverEffect } from './components/ui/HoverEffect'
+import { items } from './components/ui/items'
+import ContactUs from './components/ui/ContactUs'
+import Footer from './components/ui/Footer'
+import Hero from './components/ui/Hero'
 import './App.css'
-// import { Lamp } from './components/ui/Lamp'
-// import { Cards } from './components/ui/Cards'
-// import pathLengths from './components/ui/pathLengths'
-// import { GoogleGeminiEffect } from './components/ui/GoogleGeminiEffect'
+
+
+
 
 function App() {
 
   return (
     <>
-    <div className="  overflow-auto scrollbar ">
+    <div className='overflow-auto'>
      <Navbar3/>
-     {/* <TimeLine data={TimelineEntry}/> */}
-     <div >
-     <WavyBackground className="heading text-black  text-7xl font-extrabold ml-28" blur={0} backgroundImage={bgImage} desc="Delivering Quality Software Products and Premium IT Services Since 2013">
+     {/* <WavyBackground className="heading text-black  text-7xl font-extrabold ml-28" blur={0} backgroundImage={bgImage} desc="Delivering Quality Software Products and Premium IT Services Since 2013">
       BigByteWorld
-     </WavyBackground>
-     </div>
-<div >
-<FeaturesSectionDemo/>
-
-     {/* <GlowingEffect blur={10} inactiveZone={0.7} proximity={1} variant="default" spread={50} glow={true} disabled={false} /> */}
-
-     {/* <GoogleGeminiEffect pathLengths={pathLengths}/> */}
-     {/* <MenuItem className="menu"/> */}
-     {/* <EvervaultCard text="BigByte World"/> */}
-     {/* <Lamp/> */}
-     {/* <LayoutGrid card={Cards} cards={Cards} /> */}
-     </div>
+     </WavyBackground> */}
+     <Hero/>
+      <FeaturesSectionDemo/>
+      <div className='flex justify-center items-center  mt-10 mb-10 rounded-2xl  p-20 w-[100vw]'>
+      <BackgroundGradient animate={true} containerClassName="rounded-3xl shadow-xl w-80% max-w-full"
+        className="bg-white text-black p-6 rounded-3xl ">
+       <AboutData/>
+      </BackgroundGradient>
+      </div>
+      <HowWeWork/>
+      <HoverEffect items={items} className=""/>
+      <ContactUs/>
+      <AnimatedTestimonials testimonials={testimonials} autoplay={true}/>
+      
+      <Footer/>
+      
+      
      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

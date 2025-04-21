@@ -4,13 +4,13 @@ import { useId } from "react";
 export function FeaturesSectionDemo() {
   return (
     <>
-      <div className="custom-container bg-white py-12 px-4">
+      <div className="bg-white py-14 px-4 ">
         <div className="text-center mb-12">
           <h1 className="text-5xl font-bold text-gray-900">
-            Industries We <span className="text-cyan-500">Serve</span>
+            Industries We <span className="text-yellow-500">Serve</span>
           </h1>
           <p className="text-2xl font-medium text-gray-700 mt-4">
-            Highly tailored <span className="text-cyan-500">IT</span> Solutions
+            Highly tailored <span className="text-yellow-500">IT</span> Solutions
           </p>
         </div>
 
@@ -18,10 +18,10 @@ export function FeaturesSectionDemo() {
           {grid.map((feature) => (
             <div
               key={feature.title}
-              className="relative bg-gradient-to-br from-white via-blue-50 to-purple-50 p-6 rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+              className="relative bg-gradient-to-br from-white via-white to-transparent p-6 rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
             >
               <Grid size={20} />
-              <p className="text-cyan-500 text-lg font-bold relative z-20">
+              <p className="text-blue-950 text-lg font-bold relative z-20">
                 {feature.title}
               </p>
               <p className="text-gray-700 mt-3 text-base relative z-20">
@@ -75,7 +75,7 @@ export const Grid = ({ pattern, size }) => {
   ]);
 
   return (
-    <div className="pointer-events-none absolute left-1/2 top-0 -ml-20 -mt-2 h-full w-full [mask-image:linear-gradient(white,transparent)]">
+    <div className="pointer-events-none absolute left-1/2 top-0 -ml-20  h-full w-full [mask-image:linear-gradient(white,transparent)]">
       <div className="absolute inset-0 bg-gradient-to-r from-white/30 to-cyan-200/30 dark:from-white/30 dark:to-cyan-200/30 opacity-100">
         <GridPattern
           width={size ?? 20}

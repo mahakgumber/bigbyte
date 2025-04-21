@@ -6,6 +6,8 @@
 *{
     margin: 0px;
     padding: 0px;
+    scrollbar-width: none;
+    /* overflow: scroll; */
     /* background-color: black; */
 }
 
@@ -20,6 +22,16 @@
       display: none;             /* Chrome, Safari, Opera */
     }
   }
+  body{
+    overflow-x: hidden;
+  }
+
+  .custom-container{
+    background-color: aqua;
+    margin: 1rem;
+    height: auto;
+    border-radius: 25px;
+}
   
   
 

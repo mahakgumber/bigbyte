@@ -13,7 +13,7 @@ const NavbarMenu = [
 const Navbar3 = () => {
   return (
     <>
-    <nav className="bg-white border-blue-200 border-2 shadow-2xl sticky top-0 z-50 transition-all mt-10 mx-20 rounded-xl  duration-500 ease-in-out transform hover:shadow-2xl animate-fadeIn">
+    <nav className="bg-white fixed w-[90vw] border-blue-950 border-4 shadow-2xl  top-0 transition-all z-30 mt-5 mx-20 rounded-xl  duration-500 ease-in-out transform hover:shadow-2xl animate-fadeIn">
       <div className=" mx-auto flex justify-between items-center py-4 md:py-4 px-6"> 
         {/* Logo Section */}
         <div className="flex items-center h-3 w-auto">
@@ -28,10 +28,10 @@ const Navbar3 = () => {
         <div className="hidden md:block">
           <ul className="flex items-center gap-6 text-black ">
             {NavbarMenu.map((menu) => (
-              <li key={menu.id} className="transition-transform duration-500 hover:scale-110 hover:text-cyan-500 hover:translate-y-1">
+              <li key={menu.id} className="transition-transform duration-500 hover:scale-110 hover:text-blue-950 hover:translate-y-1">
                 <a 
                   href={menu.link} 
-                  className="inline-block py-1 px-3 hover:text-primary hover:shadow-[0_3px_0_-1px_#ef4444] font-bold"
+                  className="inline-block py-1 px-3 hover:text-primary  font-bold"
                 >
                   {menu.title}
                 </a>
@@ -41,14 +41,19 @@ const Navbar3 = () => {
         </div>
         
         {/* Buttons */}
-        <div className="flex space-x-4 ">
-          <button className="px-4 py-2  bg-cyan-500 text-white font-semibold rounded-lg hover:bg-cyan-600 transform hover:scale-125 transition-transform duration-500 ease-in-out shadow-md hover:shadow-xl">
-            Login
-          </button>
-          <button className="px-4 py-2 bg-gray-700 text-white font-semibold rounded-lg hover:bg-gray-600 transform hover:scale-125 transition-transform duration-500 ease-in-out shadow-md hover:shadow-xl">
-            Sign Up
-          </button>
-        </div>
+        <div className="flex space-x-4 items-center">
+            <button className="text-gray-700 font-medium hover:text-yellow-500  transition-all duration-300 ease-in-out transform hover:scale-105">
+              Apply as a Freelancer
+            </button>
+
+            <button className="px-4 py-2 bg-blue-950 text-white font-semibold rounded-lg shadow-md hover:bg-yellow-500 hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105">
+              Hire Top Talent
+            </button>
+
+            <button className="text-gray-700 font-medium hover:text-yellow-500  transition-all duration-300 ease-in-out transform hover:scale-105">
+              Log In
+            </button>
+          </div>
         {/* mobile menu section  */}
         <div className="md:hidden">
         <IoMdMenu  className="text-4xl"/>

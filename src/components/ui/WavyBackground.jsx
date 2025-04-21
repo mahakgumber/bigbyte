@@ -99,7 +99,7 @@
 
     return (
       <div
-        className={cn("h-screen flex flex-col items-center justify-center ", containerClassName)}>
+        className={cn(" h-[80vh] flex flex-col items-center justify-center ", containerClassName)}>
         <canvas
           className="absolute inset-0 z-0"
           ref={canvasRef}
@@ -107,7 +107,7 @@
           style={{
             ...(isSafari ? { filter: `blur(${blur}px)` } : {}),
           }}></canvas>
-          <div className="mb-56">
+          <div className="mb-[80px]">
         <div className={cn("relative z-10 ", className)} {...props}>
           {children}
         </div>
