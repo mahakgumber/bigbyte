@@ -12,6 +12,7 @@ import { items } from './components/ui/items'
 import ContactUs from './components/ui/ContactUs'
 import Footer from './components/ui/Footer'
 import Hero from './components/ui/Hero'
+import ClientsScroller from './components/ui/ClientsScroller'
 import './App.css'
 
 
@@ -38,6 +39,7 @@ function App() {
       <HoverEffect items={items} className=""/>
       <ContactUs/>
       <AnimatedTestimonials testimonials={testimonials} autoplay={true}/>
+      <ClientsScroller/>
       
       <Footer/>
       
