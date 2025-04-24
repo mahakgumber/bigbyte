@@ -7,13 +7,15 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        "xs" : "360px",
+        "xs" : "344px",
+        "s" : "540px",
         "sm" : "640px",
         "md" : "768px",
         'tab': '853px', 
+        'surface': '912px', 
         'lg': '1024px', 
         'xl': '1280px', 
-        '2xl': '1536px', 
+        'xxl': '1285px', 
       },
     },
   },

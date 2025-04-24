@@ -20,7 +20,7 @@ const Hero = () => {
         </div>
         
         </div>
-        <div className="right_side_container bg-[#0a243a] right w-[60vh] h-[100vh] relative">
+        <div className="right_side_container bg-[#0a243a] right w-[60vh] h-[100vh] relative ">
             {/* <img src="public/images/about/big_byte_innovations_cover.jpg" alt="" /> */}
         <div className="absolute top-40 left-[-30px] w-[25vw] h-[60vh] bg-white shadow-lg rounded-tr-[100px] rounded-br-[100px]">
           <img

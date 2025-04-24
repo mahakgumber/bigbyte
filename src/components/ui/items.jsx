@@ -14,12 +14,12 @@ export const items=[
     {
         title:"SEO",
         description:" Search Engine Optimisation improves the visibility of a website organically on the search engine by incorporating search engine friendly elements into a website.",
-        link:"",
+        link:"/seo",
     },
     {
         title:"eCommerce Development",
         description:"The Big Byte Innovations Pvt Ltd (BIPL) is a prominent ecommerce development company offering reliable services that shape your business ideas to excel potential of success. We ensure full-fledged e-commerce solutions that make your business two-way communication. ",
-        link:"",
+        link:"/ecommerce-development",
     },
     {
         title:"SMO",

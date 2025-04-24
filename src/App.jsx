@@ -1,50 +1,43 @@
-import Navbar3 from './components/Navbar3'
-import { WavyBackground } from './components/ui/WavyBackground'
-import { FeaturesSectionDemo } from './components/ui/FeaturesSectionDemo'
-import bgImage from "/images/hero/bg.jpeg"
-import { BackgroundGradient } from './components/ui/BackgroundGradient'
-import AboutData from './components/ui/AboutData'
-import HowWeWork from './components/ui/HowWeWork'
-import { AnimatedTestimonials } from './components/ui/AnimatedTestimonials'
-import { testimonials } from './components/ui/testimonials'
-import { HoverEffect } from './components/ui/HoverEffect'
-import { items } from './components/ui/items'
-import ContactUs from './components/ui/ContactUs'
-import Footer from './components/ui/Footer'
-import Hero from './components/ui/Hero'
-import ClientsScroller from './components/ui/ClientsScroller'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route,} from 'react-router-dom'
+import Home from './Pages/Home/Home';
+import About from './Pages/about/About';
+import Services from './Pages/Services/Services';
+import Contact from './Pages/ContactUs/Contact';
+import Blogs from './Pages/Blogs/Blogs';
+import Ecommerce from './Pages/Ecommerce-development/Ecommerce';
+import Seo from './Pages/SEO/Seo';
+import Web from './Pages/Web-development/Web';
+import Digital from './Pages/Digital-Marketing/Digital';
+import Mobile from './Pages/Mobile-App-Development/Mobile';
+import BI from './Pages/Business-Intelligence/BI';
+import Health from './Pages/Healthcare-Sector/Health';
+import Financial from './Pages/Financial-Sector/Financial';
+import SMO from './Pages/SMO/SMO';
 import './App.css'
-
-
-
 
 function App() {
 
   return (
     <>
-    <div className='overflow-auto'>
-     <Navbar3/>
-     {/* <WavyBackground className="heading text-black  text-7xl font-extrabold ml-28" blur={0} backgroundImage={bgImage} desc="Delivering Quality Software Products and Premium IT Services Since 2013">
-      BigByteWorld
-     </WavyBackground> */}
-     <Hero/>
-      <FeaturesSectionDemo/>
-      <div className='flex justify-center items-center  mt-10 mb-10 rounded-2xl  p-20 w-[100vw]'>
-      <BackgroundGradient animate={true} containerClassName="rounded-3xl shadow-xl w-80% max-w-full"
-        className="bg-white text-black p-6 rounded-3xl ">
-       <AboutData/>
-      </BackgroundGradient>
-      </div>
-      <HowWeWork/>
-      <HoverEffect items={items} className=""/>
-      <ContactUs/>
-      <AnimatedTestimonials testimonials={testimonials} autoplay={true}/>
-      <ClientsScroller/>
-      
-      <Footer/>
-      
-      
-     </div>
+   <Router>
+      <Routes>
+        <Route path="/" element={< Home/>} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/contact-us" element={<Contact />} />
+        <Route path="/ecommerce-development" element={<Ecommerce />} />
+        <Route path="/seo" element={<Seo />} />
+        <Route path="/web-development" element={<Web />} />
+        <Route path="/digital-marketing" element={<Digital />} />
+        <Route path="/social-media-optimization" element={<SMO />} />
+        <Route path="/mobile-app-development" element={<Mobile />} />
+        <Route path="/business-intelligence" element={<BI />} />
+        <Route path="/financial-sector" element={<Financial />} />
+        <Route path="/healthcare-sector" element={<Health />} />
+      </Routes>
+    </Router>
     </>
   );
 }

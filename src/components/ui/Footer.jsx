@@ -1,87 +1,103 @@
-import React from 'react'
+import React from 'react';
 import { FaFacebook } from "react-icons/fa";
-import { FaSquareInstagram } from "react-icons/fa6";
-import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaSquareInstagram, FaSquareXTwitter, FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { FaLocationDot } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <>
-      <div className='bg-cyan-100 flex flex-row  '>
-        <div className='p-24'>
-        <div className="logo">
-            <img src="public/images/logo/bigbyte-logo.png" alt="" />
+    <div className="bg-cyan-100 w-full">
+      {/* Top Section */}
+      <div className="flex flex-col xl:flex-row items-center justify-between px-6 py-10 gap-6">
+        <div className="flex flex-col items-center xl:items-start">
+          <div className="logo mb-4">
+            <img src="public/images/logo/bigbyte-logo.png" alt="BigByte Logo" className="w-32 s:w-40" />
+          </div>
+          <div className="text-cyan-950 text-center xl:text-left">
+            <p className="text-xl font-extrabold">BigByte World</p>
+            <p className="text-lg font-semibold">Your Vision, Our Innovation.</p>
+          </div>
         </div>
-        <div className='text-cyan-950 p-5'>
-            <p className='text-xl font-extrabold'>BigByte World</p>
-            <p className='text-xl font-semibold'>Your Vision, Our Innovation.</p>
-        </div>
-        </div>
-        <div className='bg-[#0a243a] text-white right-0 w-full'>
-            <div className='flex flex-row ml-16 '>
-                <div className='p-10 flex flex-row justify-between gap-72'>
-                    <div>
-                    <p className='mb-4 text-xl font-semibold'>Follow Us </p>
-                    <div className='flex flex-row gap-16'>
-                        <FaFacebook className='w-7 h-7 '/>
-                        <FaSquareInstagram className='w-7 h-7'/>
-                        <FaSquareXTwitter className='w-7 h-7'/>
-                    </div>
-                    </div>
-                    <div className="subscribe">
-                        <p className='text-xl font-semibold mb-3'>Subscribe</p>
-                        <div className='flex flex-row gap-6'>
-                        <input type="text" name="" id="" className='p-1 rounded-md w-60 ' placeholder='E-mail'/>
-                        <button className='bg-white text-black px-3 rounded-md font-semibold'>Subscribe</button>
-                        </div>
-                    </div>
-                </div>
+
+        <div className="bg-[#0a243a] text-white w-full xl:w-3/4 p-6 rounded-md">
+          {/* Social + Subscribe */}
+          <div className="flex flex-col tab:flex-row justify-between items-center gap-6 mb-6 md:flex-row s:flex-row ">
+            {/* Social Links */}
+            <div>
+              <p className="mb-2 text-xl font-semibold text-center tab:text-left">Follow Us</p>
+              <div className="flex gap-6 justify-center tab:justify-start">
+                <FaFacebook className="w-6 h-6" />
+                <FaSquareInstagram className="w-6 h-6" />
+                <FaSquareXTwitter className="w-6 h-6" />
+              </div>
             </div>
 
-         <hr />
-        <div className='main-container flex flex-row gap-36 p-16 ml-9'>
-        <div className='sub-container-1'>
-        <p className='font-bold text-2xl mb-3'>IT Services</p>
-        <ul className='flex flex-col gap-3 font-medium'>
-            <li><a href="">eCommerce Development</a></li>
-            <li><a href="">SEO</a></li>
-            <li><a href="">Web Development</a></li>
-            <li><a href="">Digital Marketing</a></li>
-            <li><a href="">Development</a></li>
-            <li><a href="">SMO</a></li>
-        </ul>
-    </div>
-    <div className="sub-container-2">
-    <p className='font-bold text-2xl mb-3'>Important Links</p>
-        <ul className='flex flex-col gap-3 font-medium'>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Contact Us</a></li>
-            <li><a href="">Privacy Policy</a></li>
-            <li><a href="">Refund and Returns Policy</a></li>
-            <li><a href="">Terms and Conditions</a></li>
-            
-        </ul>
-    </div>
-    <div className="sub-container-3">
-    <p className='font-bold text-2xl mb-3'>Get in Touch</p>
-        <ul className='flex flex-col gap-3 font-medium' >
-            <li ><a href="" className='flex flex-center gap-2'><FaPhoneAlt className='mt-1'/>:+91 94661 94004</a></li>
-            <li><a href="" className='flex flex-center gap-2'><MdEmail className='mt-1'/>: info@bigbyteworld.com </a></li>
-            <li><a href="" className='flex flex-center gap-2'><FaLocationDot className='mt-1'/>: Plot No. 151,   </a></li>
-            <li><a href="" className='ml-7'>Industrial Area,Sector-2,</a></li>
-            <li><a href="" className='ml-7'>Kurukshetra – 136118 (Haryana)</a></li>
-            
-        </ul>
-    </div>
- </div>
- <div className='copyright bg-cyan-900 text-center'>© 2022 Big Byte Innovations Pvt. Ltd All Rights Reserved</div>
- </div>
+            {/* Subscribe */}
+            <div className="text-center tab:text-right">
+              <p className="text-xl font-semibold mb-2">Subscribe</p>
+              <div className="flex gap-3 justify-center tab:justify-end">
+                <input type="text" placeholder="E-mail" className="p-2 rounded-md w-56 xs:w-40 xl:w-52" />
+                <button className="bg-white text-black px-4 rounded-md font-semibold">Subscribe</button>
+              </div>
+            </div>
+          </div>
 
+          <hr className="my-4 border-gray-500" />
+
+          {/* Links & Contact */}
+          <div className="flex flex-col s:flex-row s:flex-wrap md:flex-row justify-between gap-10 text-center  xs:text-left xs:ml-4 tab:flex tab:flex-row tab:gap-3 surface:flex surface:flex-row surface:gap-3">
+            {/* IT Services */}
+            <div className=''>
+              <p className="font-bold text-2xl mb-3">IT Services</p>
+              <ul className="flex flex-col gap-2 font-medium">
+                <li><a href="/ecommerce-development">eCommerce Development</a></li>
+                <li><a href="">SEO</a></li>
+                <li><a href="">Web Development</a></li>
+                <li><a href="">Digital Marketing</a></li>
+                <li><a href="">Development</a></li>
+                <li><a href="">SMO</a></li>
+              </ul>
+            </div>
+
+            {/* Important Links */}
+            <div>
+              <p className="font-bold text-2xl mb-3">Important Links</p>
+              <ul className="flex flex-col gap-2 font-medium">
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Refund and Returns Policy</a></li>
+                <li><a href="">Terms and Conditions</a></li>
+              </ul>
+            </div>
+
+            {/* Contact Info */}
+            <div className='xs:text-left s:text-center md:ml-24 tab:ml-0  '>
+              <p className="font-bold text-2xl mb-3 tab:text-left">Get in Touch</p>
+              <ul className="flex flex-col gap-2 font-medium s:flex-row s:flex-wrap s:gap-2 tab:flex-col tab:gap-2 tab:flex md:flex md:flex-col md:items-center surface:flex surface:flex-col surface:items-start lg:items-start lg:flex lg:flex-col tab:items-start ">
+              <div className='s:flex s:flex-row gap-12 tab:flex tab:flex-col tab:gap-2 surface:flex surface:flex-col surface:items-start lg:items-start lg:flex lg:flex-col '>
+                <li className="flex xs:flex-row items-left gap-2 "><FaPhoneAlt className='' /> +91 94661 94004</li>
+                <li className="flex items-center gap-2"><MdEmail /> info@bigbyteworld.com</li>
+                </div>
+                <li className="flex items-start gap-2 s:ml-10 surface:ml-0 tab:ml-0 lg:ml-0"><FaLocationDot /> 
+                  <span>
+                    Plot No. 151, Industrial Area, Sector-2, <br />
+                    <span className='mr-10'>Kurukshetra – 136118 (Haryana)</span>
+                  </span>
+                </li>
+               
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </>
-  )
-}
 
-export default Footer
+      {/* Bottom Section */}
+      <div className="bg-cyan-900 text-white text-center py-3 text-sm">
+        © 2022 Big Byte Innovations Pvt. Ltd. All Rights Reserved
+      </div>
+    </div>
+  );
+};
+
+export default Footer;

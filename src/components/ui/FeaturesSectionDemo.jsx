@@ -27,6 +27,11 @@ export function FeaturesSectionDemo() {
               <p className="text-gray-700 mt-3 text-base relative z-20">
                 {feature.description}
               </p>
+              <p className="text-cyan-800 text-lg font-bold relative z-20 mt-3">
+                <a href={feature.link}>
+                  Discover More...
+                </a>
+              </p>
             </div>
           ))}
         </div>
@@ -40,31 +45,55 @@ const grid = [
     title: "E Commerce Development",
     description:
       "The Big Byte Innovations Pvt Ltd (BIPL) is a prominent ecommerce development company offering reliable services that shape your business ideas to excel potential of success",
+    link:"/ecommerce-development",
   },
   {
     title: "SEO",
     description:
       "With proper SEO techniques, businesses can grow faster with an efficient website that could quench the thirst of users to get relevant information about the product and services provided.",
+      link:"/seo",
   },
   {
     title: "Web Development",
     description:
       "Building an attractive website with all essential elements is not the only thing to be considered. Website security is key to preventing unauthorized access.",
+      link:"/web-development",
   },
   {
     title: "Digital Marketing",
     description:
       "We specialize in the development of multifunctional, dynamic and robust business websites using the most advanced technologies.",
+      link:"/digital-marketing",
   },
   {
-    title: "Development",
+    title: "Mobile App Development",
     description:
-      "We build custom, search engine optimised websites without sacrificing speed, performance, and quality.",
+      "We craft high-performance mobile apps tailored to your business needs, ensuring seamless user experiences across iOS and Android platforms.",
+      link:"/mobile-app-development",
   },
   {
     title: "Social Media Optimization",
     description:
       "BigByte has experts who have deep knowledge of how SMM works and how it can benefit your business.",
+      link:"/social-media-optimization",
+  },
+  {
+    title: "Business Intelligence",
+    description:
+      "We empower businesses with data-driven insights through robust BI solutions. We help industries turn data into insights, enabling smarter decisions, improved efficiency, and strategic growth.",
+      link:"/business-intelligence",
+  },
+  {
+    title: "Financial Sector",
+    description:
+      "We empower financial institutions with data-driven insights to enhance risk management, optimize operations, and drive informed decisions.",
+      link:"/financial-sector",
+  },
+  {
+    title: "HealthCare Sector",
+    description:
+      "We deliver secure and user-friendly digital solutions to streamline healthcare operations, improve patient engagement, and enhance care delivery.  ",
+      link:"/healthcare-sector",
   },
 ];
 
