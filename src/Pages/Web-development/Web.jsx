@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar3 from '../../components/Navbar3'
+import Navbar4 from '../../components/Navbar4'
 import Hero from '../../components/Web-Development/Hero'
 // import Features from '../../components/Web-Development/Features'
 import Features1 from '../../components/Web-Development/Features1'
@@ -11,7 +11,7 @@ import Footer from '../../components/ui/Footer'
 const Web = () => {
   return (
     <>
-      <Navbar3/>
+      <Navbar4/>
       <Hero/>
       {/* <Features/> */}
       <Features1/>
