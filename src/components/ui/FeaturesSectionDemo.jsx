@@ -66,10 +66,10 @@ const grid = [
       link:"/digital-marketing",
   },
   {
-    title: "Mobile App Development",
+    title: "Testing Services",
     description:
-      "We craft high-performance mobile apps tailored to your business needs, ensuring seamless user experiences across iOS and Android platforms.",
-      link:"/mobile-app-development",
+      "Help to Test Web Apps with Codeless automation testing tool.",
+      link:"/testing",
   },
   {
     title: "Social Media Optimization",
@@ -77,24 +77,24 @@ const grid = [
       "BigByte has experts who have deep knowledge of how SMM works and how it can benefit your business.",
       link:"/social-media-optimization",
   },
-  {
-    title: "Business Intelligence",
-    description:
-      "We empower businesses with data-driven insights through robust BI solutions. We help industries turn data into insights, enabling smarter decisions, improved efficiency, and strategic growth.",
-      link:"/business-intelligence",
-  },
-  {
-    title: "Financial Sector",
-    description:
-      "We empower financial institutions with data-driven insights to enhance risk management, optimize operations, and drive informed decisions.",
-      link:"/financial-sector",
-  },
-  {
-    title: "HealthCare Sector",
-    description:
-      "We deliver secure and user-friendly digital solutions to streamline healthcare operations, improve patient engagement, and enhance care delivery.  ",
-      link:"/healthcare-sector",
-  },
+  // {
+  //   title: "Business Intelligence",
+  //   description:
+  //     "We empower businesses with data-driven insights through robust BI solutions. We help industries turn data into insights, enabling smarter decisions, improved efficiency, and strategic growth.",
+  //     link:"/business-intelligence",
+  // },
+  // {
+  //   title: "Financial Sector",
+  //   description:
+  //     "We empower financial institutions with data-driven insights to enhance risk management, optimize operations, and drive informed decisions.",
+  //     link:"/financial-sector",
+  // },
+  // {
+  //   title: "HealthCare Sector",
+  //   description:
+  //     "We deliver secure and user-friendly digital solutions to streamline healthcare operations, improve patient engagement, and enhance care delivery.  ",
+  //     link:"/healthcare-sector",
+  // },
 ];
 
 export const Grid = ({ pattern, size }) => {

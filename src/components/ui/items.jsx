@@ -4,12 +4,12 @@ export const items=[
     {
         title:"Website",
         description:"We offer comprehensive end to end Solutions for your busniess Projects. Our Accurately Programmed Web Applications Fit Perfectly To Your Business Requirements.",
-        link:"",
+        
     },
     {
         title:"Android Apps",
         description:"Our Android applications are crafted to deliver seamless performance, intuitive user experience, and modern design. Built using the latest technologies, our apps are optimized for speed, security, and compatibility across all Android devices.",
-        link:"",
+    
     },
     {
         title:"SEO",
@@ -29,6 +29,20 @@ export const items=[
     {
         title:"Marketing",
         description:"To get a functional, updated and competitive business website, you need a business partner that can provide you with the same and has understanding of the industry. BigByte is your one-stop centre for all your needs. ",
-        link:"",
+        
+    },
+    {
+        title:"Business Intelligence",
+        description:"We empower businesses with data-driven insights through robust BI solutions. We help industries turn data into insights, enabling smarter decisions, improved efficiency, and strategic growth. ",
+    },
+    {
+        title:"Financial Sector",
+        description:"We empower financial institutions with data-driven insights to enhance risk management, optimize operations, and drive informed decisions. ",
+        
+    },
+    {
+        title:"HealthCare Sector",
+        description:"We deliver secure and user-friendly digital solutions to streamline healthcare operations, improve patient engagement, and enhance care delivery.",
+        
     },
 ]

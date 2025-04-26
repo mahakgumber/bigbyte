@@ -4,7 +4,14 @@ import { IoMdClose } from "react-icons/io"; // for close icon
 
 const NavbarMenu = [
   { id: 1, title: 'Home', link: '/' },
-  { id: 2, title: 'Services', link: '/services' },
+  { id: 2, title: 'Services', link: '/services', 
+    submenu: [
+      { title: 'Web Development', link: '/services/web-development' },
+      { title: 'App Development', link: '/services/app-development' },
+      { title: 'Digital Marketing', link: '/services/digital-marketing' },
+      { title: 'SEO Services', link: '/services/seo-services' },
+    ]
+  },
   { id: 3, title: 'About us', link: '/about' },
   { id: 4, title: 'Blogs', link: '/blogs' },
   { id: 5, title: 'Contact Us', link: '/contact-us' },

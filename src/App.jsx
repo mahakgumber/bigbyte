@@ -14,6 +14,8 @@ import BI from './Pages/Business-Intelligence/BI';
 import Health from './Pages/Healthcare-Sector/Health';
 import Financial from './Pages/Financial-Sector/Financial';
 import SMO from './Pages/SMO/SMO';
+import Test from './Pages/Testing/Test';
+import VisitUs from './components/ui/VisitUs';
 import './App.css'
 
 function App() {
@@ -27,6 +29,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact-us" element={<Contact />} />
+        <Route path="/visit-us" element={<VisitUs />} />
         <Route path="/ecommerce-development" element={<Ecommerce />} />
         <Route path="/seo" element={<Seo />} />
         <Route path="/web-development" element={<Web />} />
@@ -36,6 +39,10 @@ function App() {
         <Route path="/business-intelligence" element={<BI />} />
         <Route path="/financial-sector" element={<Financial />} />
         <Route path="/healthcare-sector" element={<Health />} />
+        <Route path="/testing" element={<Test />} />
+
+        
+
       </Routes>
     </Router>
     </>

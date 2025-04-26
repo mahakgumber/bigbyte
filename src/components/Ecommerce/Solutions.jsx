@@ -106,12 +106,12 @@ const Solutions = () => {
         ))}
       </div>
     </div>
-    <div className="mt-14 mb-16 xs:mt-4 xs:mb-10">
+    {/* <div className="mt-14 mb-16 xs:mt-4 xs:mb-10">
         <p className='text-base mt-4 font-base px-32 xs:p-3'>Being a top ecommerce development company, Big Byte offers a holistic approach to designing and developing websites that are appealing and easy to navigate, fast and responsive.</p>
         <p className='text-base mt-4 font-base px-32 xs:p-3'>We strive to create an engaging atmosphere for your customers with our eCommerce development services.</p>
         <p className='text-base mt-4 font-base px-32 xs:p-3'>To sell a product digitally, a company website must provide a unique and interactive experience that can leave a mark on the customer’s mind. BIPL offers completely managed eCommerce solutions with excellence.</p>
         <p className='text-base mt-4 font-base px-32 xs:p-3'>Big Byte Innovations Pvt Ltd guides online entry strategy for your business to reach an extensive array of customers. Take advantage of our reliable and affordable services to develop a whole ecosystem, enabling you to directly sell products to your customer.</p>
-    </div>
+    </div> */}
     </>
   );
 };

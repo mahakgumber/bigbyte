@@ -1,40 +1,52 @@
 import React from 'react';
 
+const services = [
+  "Grocery Store ",
+  "Restaurants",
+  "Fashion & Clothing",
+  "Jewellery Store",
+  "Travel & Tourism",
+  "Online Booking",
+  "Medical & Pharmacy",
+];
+
 const Services = () => {
   return (
-    <div className="w-full px-2 w-7xl mx-2">
+    <section className="w-full bg-gradient-to-b from-[#f0f8ff] to-white py-14 px-4">
       {/* Heading */}
-      <div className="mt-10">
-        <p className="text-3xl font-bold text-[#0a243a] bg-[#c6e2ed] xl:px-8 py-1 xl:mx-3 xs:mx-2 xs:px-2">
-          Our services cover all significant industries of eCommerce development, such as
+      <div className="max-w-4xl mx-auto text-center mb-12">
+        <h2 className="text-4xl sm:text-5xl font-bold text-[#0a243a] mb-4">
+          Industries We Serve
+        </h2>
+        <p className="text-lg sm:text-xl text-gray-600">
+          Our services cater to a wide range of eCommerce businesses, delivering scalable and user-centric solutions.
         </p>
       </div>
 
-      {/* Content Section */}
-      <div className="flex flex-col xl:flex-row xl:items-center mt-10 gap-6">
-        {/* Image */}
-        <div className="flex justify-center xl:justify-start">
-          <img
-            src="./images/Industries/Ecommerce/ecommerce2.png"
-            alt="ecommerce"
-            className="w-full max-w-[880px] h-auto xs:w-[300px] s:w-[500px] md:w-[700px] lg:w-[950px]"
-          />
+      {/* Main Content */}
+      <div className="max-w-6xl mx-auto flex flex-col-reverse xl:flex-row items-center gap-12">
+        {/* Service List */}
+        <div className="w-full xl:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="p-5 bg-white border border-blue-100 rounded-xl shadow-md hover:shadow-xl transition-transform hover:scale-[1.02]"
+            >
+              <p className="text-lg font-medium text-blue-900">{service}</p>
+            </div>
+          ))}
         </div>
 
-        {/* Services List */}
-        <div className="mt-10 xl:mt-0 mb-4">
-          <ul className="text-xl s:text-2xl tab:text-3xl font-medium space-y-2">
-            <li className="p-2 bg-blue-200 rounded-md">Grocery store app development</li>
-            <li className="p-2 bg-blue-50 rounded-md">Restaurants</li>
-            <li className="p-2 bg-blue-200 rounded-md">Fashion & Clothing</li>
-            <li className="p-2 bg-blue-50 rounded-md">Jewellery store</li>
-            <li className="p-2 bg-blue-200 rounded-md">Travel & Tourism</li>
-            <li className="p-2 bg-blue-50 rounded-md">Online booking</li>
-            <li className="p-2 bg-blue-200 rounded-md">Medical & Pharmacy</li>
-          </ul>
+        {/* Image Section */}
+        <div className="w-full xl:w-1/2 flex justify-center">
+          <img
+            src="./images/Industries/Ecommerce/ecommerce2.png"
+            alt="Ecommerce illustration"
+            className="w-full max-w-xl rounded-xl shadow-lg"
+          />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

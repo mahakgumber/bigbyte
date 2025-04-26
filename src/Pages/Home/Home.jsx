@@ -11,6 +11,7 @@ import ContactUs from '../../components/ui/ContactUs'
 import Footer from '../../components/ui/Footer'
 import Hero from '../../components/ui/Hero'
 import ClientsScroller from '../../components/ui/ClientsScroller'
+import VisitUs from '../../components/ui/VisitUs'
 
 function Home() {
 
@@ -34,6 +35,7 @@ function Home() {
       <ContactUs/>
       <AnimatedTestimonials testimonials={testimonials} autoplay={true}/>
       <ClientsScroller/>
+      <VisitUs/>
       
       <Footer/>
       
