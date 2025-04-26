@@ -12,6 +12,7 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
+    "@material-tailwind/react": "^2.1.10",
     "aceternity": "^1.0.1",
     "clsx": "^2.1.1",
     "cobe": "^0.6.3",
