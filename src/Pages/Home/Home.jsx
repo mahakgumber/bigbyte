@@ -12,11 +12,15 @@ import Footer from '../../components/ui/Footer'
 import Hero1 from '../../components/ui/Hero1'
 import ClientsScroller from '../../components/ui/ClientsScroller'
 import VisitUs from '../../components/ui/VisitUs'
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css"
 
 function Home() {
 
   return (
     <>
+            <ToastContainer />
+
     <div className='overflow-auto'>
      <Navbar3/>
      {/* <WavyBackground className="heading text-black  text-7xl font-extrabold ml-28" blur={0} backgroundImage={bgImage} desc="Delivering Quality Software Products and Premium IT Services Since 2013">
