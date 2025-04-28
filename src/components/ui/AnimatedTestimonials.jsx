@@ -1,56 +1,139 @@
-import { useState, useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { FaQuoteLeft } from "react-icons/fa";
 
-export const AnimatedTestimonials = ({ testimonials, autoplay }) => {
-  const [active, setActive] = useState(0);
-
-  const handleNext = () => {
-    setActive((prev) => (prev + 1) % testimonials.length);
-  };
-
-  const handlePrev = () => {
-    setActive((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-  };
+export const AnimatedTestimonials = ({ testimonials }) => {
+  const containerRef = useRef(null);
+  const translateX = useRef(0);
 
   useEffect(() => {
-    if (autoplay) {
-      const interval = setInterval(handleNext, 5000);
-      return () => clearInterval(interval);
-    }
-  }, [autoplay]);
+    const container = containerRef.current;
+
+    let animationFrame;
+
+    const scroll = () => {
+      translateX.current -= 0.5; // Speed of scroll
+
+      if (container) {
+        container.style.transform = `translateX(${translateX.current}px)`;
+
+        // If fully scrolled, reset
+        if (Math.abs(translateX.current) >= container.scrollWidth / 2) {
+          translateX.current = 0;
+        }
+      }
+
+      animationFrame = requestAnimationFrame(scroll);
+    };
+
+    animationFrame = requestAnimationFrame(scroll);
+
+    return () => cancelAnimationFrame(animationFrame);
+  }, []);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 px-4 md:px-6 py-10">
-      <h1 className="text-3xl md:text-5xl font-bold text-[#0a243a] mb-8 md:mb-12 text-center">
+    <div
+      style={{
+        minHeight: "100vh",
+        paddingTop: "5rem",
+        paddingBottom: "5rem",
+        backgroundColor: "#f3f4f6",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        overflow: "hidden",
+      }}
+    >
+      <h2
+        style={{
+          fontSize: "2.5rem",
+          fontWeight: "bold",
+          color: "#0a243a",
+          marginBottom: "2rem",
+          textAlign: "center",
+        }}
+      >
         What Our Clients Say
-      </h1>
+      </h2>
 
-      <div className="relative w-full max-w-lg sm:max-w-2xl bg-white shadow-2xl rounded-2xl p-6 sm:p-10 md:p-14 text-center space-y-4 sm:space-y-6">
-        <div className="text-3xl sm:text-4xl text-[#0a243a] mb-2 sm:mb-4 flex justify-center">
-          <FaQuoteLeft />
-        </div>
-        <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed italic">
-          "{testimonials[active].quote}"
-        </p>
-        <div className="mt-6 sm:mt-8">
-          <h3 className="text-lg sm:text-2xl font-bold text-[#0a243a]">{testimonials[active].name}</h3>
-          <p className="text-gray-500 text-xs sm:text-sm">{testimonials[active].designation}</p>
-        </div>
-      </div>
+      {/* Scrolling wrapper */}
+      <div
+        style={{
+          width: "100%",
+          overflow: "hidden",
+          position: "relative",
+        }}
+      >
+        <div
+          ref={containerRef}
+          style={{
+            display: "flex",
+            gap: "1.5rem",
+            whiteSpace: "nowrap",
+            willChange: "transform",
+          }}
+        >
+          {[...testimonials, ...testimonials].map((testimonial, index) => (
+            <div
+              key={index}
+              style={{
+                flex: "0 0 auto",
+                width: "30rem",
+                background: "#fff",
+                borderRadius: "1.5rem",
+                boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+                padding: "2rem",
+                height: "18rem",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+                flexWrap:"wrap",
+              }}
+            >
+              <div 
+              style={{
+                display:"flex",
+                flexWrap:"wrap",
+              }}>
+                <div
+                  style={{
+                    color: "#ff9908",
+                    fontSize: "2.5rem",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  <FaQuoteLeft />
+                </div>
+                <p
+                  style={{
+                    color: "#4b5563",
+                    fontSize: "1rem",
+                    fontStyle: "italic",
+                    lineHeight: "1.5",
+                    overflowWrap: "break-word",
+                  }}
+                >
+                  "{testimonial.quote}"
+                </p>
+              </div>
 
-      <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-8 sm:mt-10">
-        <button
-          onClick={handlePrev}
-          className="px-6 py-2 rounded-full bg-[#0a243a] text-white hover:bg-[#122f4b] transition duration-300 w-full sm:w-auto"
-        >
-          Previous
-        </button>
-        <button
-          onClick={handleNext}
-          className="px-6 py-2 rounded-full bg-[#0a243a] text-white hover:bg-[#122f4b] transition duration-300 w-full sm:w-auto"
-        >
-          Next
-        </button>
+              <div>
+                <h3
+                  style={{
+                    color: "#0a243a",
+                    fontWeight: "bold",
+                    fontSize: "1.5rem",
+                    marginTop: "1rem",
+                  }}
+                >
+                  {testimonial.name}
+                </h3>
+                <p style={{ color: "#9ca3af", fontSize: "0.9rem" }}>
+                  {testimonial.designation}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
