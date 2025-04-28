@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaFacebook } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
-import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 
 
 const ContactUs = () => {
@@ -41,9 +41,9 @@ const ContactUs = () => {
                         <p className='font-semibold'>+91 87080 42248</p>
                     </div>
                     <div className=' flex flex-row gap-14 ml-2 mt-8  '>
-                    <FaFacebook className='w-7 h-7 '/>
-                    <FaSquareInstagram className='w-7 h-7'/>
-                    <FaSquareXTwitter className='w-7 h-7'/>
+                    <a href="https://www.facebook.com/BigByteTechnologies/"> <FaFacebook className="w-7 h-7" /></a>
+                     <a href="https://www.instagram.com/bigbyteinnovations/"><FaSquareInstagram className="w-7 h-7" /></a>
+                     <a href="https://www.linkedin.com/company/big-byte-innovations/"><FaLinkedin className="w-7 h-7"/></a>
                     </div>
                 </div>
          </div>

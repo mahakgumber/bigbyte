@@ -2,6 +2,7 @@ import React from 'react';
 import { FaFacebook } from "react-icons/fa";
 import { FaSquareInstagram, FaSquareXTwitter, FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
@@ -26,9 +27,10 @@ const Footer = () => {
             <div>
               <p className="mb-2 text-xl font-semibold text-center tab:text-left">Follow Us</p>
               <div className="flex gap-6 justify-center tab:justify-start">
-                <FaFacebook className="w-6 h-6" />
-                <FaSquareInstagram className="w-6 h-6" />
-                <FaSquareXTwitter className="w-6 h-6" />
+               <a href="https://www.facebook.com/BigByteTechnologies/"> <FaFacebook className="w-6 h-6" /></a>
+                <a href="https://www.instagram.com/bigbyteinnovations/"><FaSquareInstagram className="w-6 h-6" /></a>
+                <a href="https://www.linkedin.com/company/big-byte-innovations/"><FaLinkedin className="w-6 h-6"/></a>
+                {/* <FaSquareXTwitter className="w-6 h-6" /> */}
               </div>
             </div>
 
@@ -51,11 +53,11 @@ const Footer = () => {
               <p className="font-bold text-2xl mb-3">IT Services</p>
               <ul className="flex flex-col gap-2 font-medium">
                 <li><a href="/ecommerce-development">eCommerce Development</a></li>
-                <li><a href="">SEO</a></li>
-                <li><a href="">Web Development</a></li>
-                <li><a href="">Digital Marketing</a></li>
-                <li><a href="">Development</a></li>
-                <li><a href="">SMO</a></li>
+                <li><a href="SEO">SEO</a></li>
+                <li><a href="Web-Development">Web Development</a></li>
+                <li><a href="Digital-Marketing">Digital Marketing</a></li>
+                <li><a href="/testing">Testing Services</a></li>
+                <li><a href="/social-media-optimization">SMO</a></li>
               </ul>
             </div>
 
