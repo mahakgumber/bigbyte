@@ -26,8 +26,8 @@ function Home() {
      <Hero1/>
      </div>
       <FeaturesSectionDemo/>
-      <div className='flex justify-center items-center  mt-10 mb-10 rounded-2xl  p-20 w-[100vw]'>
-      <BackgroundGradient animate={true} containerClassName="rounded-3xl shadow-xl w-80% max-w-full"
+      <div className='flex justify-center items-center  mt-10 mb-10 rounded-2xl  xl:p-20 xs:p-3 md:p-5 s:p-6 lg:p-7 w-[100vw]'>
+      <BackgroundGradient animate={true} containerClassName="rounded-3xl shadow-xl w-[100%] max-w-full"
         className="bg-white text-black p-6 rounded-3xl ">
        <AboutData/>
       </BackgroundGradient>
