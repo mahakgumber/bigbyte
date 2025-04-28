@@ -4,8 +4,8 @@ const Hero = () => {
   return (
     <>
       <div className='container flex w-full h-screen relative z-10 overflow-scroll '>
-        <div className='left-side-container bg-[#0a243a] w-[10vw]'></div>
-        <div className='bg-[#ff9908] w-[5vw] ml-10'></div>
+        <div className='left-side-container bg-[#0a243a] w-[10vw] '></div>
+        <div className='bg-[#ff9908] w-[5vw] ml-10 '></div>
         <div className='bg-white flex-1'>
         <div className="globe bg-white">
      <div className="heading ml-8 mt-72  ">

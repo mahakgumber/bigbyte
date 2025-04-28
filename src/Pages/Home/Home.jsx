@@ -9,7 +9,7 @@ import { HoverEffect } from '../../components/ui/HoverEffect'
 import { items } from '../../components/ui/items'
 import ContactUs from '../../components/ui/ContactUs'
 import Footer from '../../components/ui/Footer'
-import Hero from '../../components/ui/Hero'
+import Hero1 from '../../components/ui/Hero1'
 import ClientsScroller from '../../components/ui/ClientsScroller'
 import VisitUs from '../../components/ui/VisitUs'
 
@@ -22,7 +22,9 @@ function Home() {
      {/* <WavyBackground className="heading text-black  text-7xl font-extrabold ml-28" blur={0} backgroundImage={bgImage} desc="Delivering Quality Software Products and Premium IT Services Since 2013">
       BigByteWorld
      </WavyBackground> */}
-     <Hero/>
+     <div className=''>
+     <Hero1/>
+     </div>
       <FeaturesSectionDemo/>
       <div className='flex justify-center items-center  mt-10 mb-10 rounded-2xl  p-20 w-[100vw]'>
       <BackgroundGradient animate={true} containerClassName="rounded-3xl shadow-xl w-80% max-w-full"

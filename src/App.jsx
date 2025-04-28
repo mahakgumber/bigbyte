@@ -14,9 +14,10 @@ import BI from './Pages/Business-Intelligence/BI';
 import Health from './Pages/Healthcare-Sector/Health';
 import Financial from './Pages/Financial-Sector/Financial';
 import SMO from './Pages/SMO/SMO';
-import Test from './Pages/Testing/Test';
-import VisitUs from './components/ui/VisitUs';
+import Log from "./Pages/Log-In/Log";
+import Test from "./Pages/Testing/Test"
 import './App.css'
+import VisitUs from './components/ui/VisitUs';
 
 function App() {
 
@@ -39,10 +40,8 @@ function App() {
         <Route path="/business-intelligence" element={<BI />} />
         <Route path="/financial-sector" element={<Financial />} />
         <Route path="/healthcare-sector" element={<Health />} />
+        <Route path="/log-in" element={<Log />} />
         <Route path="/testing" element={<Test />} />
-
-        
-
       </Routes>
     </Router>
     </>
