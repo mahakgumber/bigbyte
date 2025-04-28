@@ -41,7 +41,7 @@ const Services = () => {
         {/* Image Section */}
         <div className="w-full xl:w-1/2 flex justify-center">
           <img
-            src="/images/hero/test2.jpeg"
+            src="/images/hero/4380747.jpg"
             alt="Testing services illustration"
             className="w-full max-w-md md:max-w-lg rounded-2xl shadow-xl object-cover"
           />

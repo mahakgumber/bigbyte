@@ -28,7 +28,7 @@ const VisitUs = () => {
           <div className="w-full h-80 md:h-[450px] rounded-xl overflow-hidden shadow-lg">
             <iframe
               title="W3 Dream Solutions Location"
-              src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d157660.19275048107!2d76.78935790251718!3d29.943779715595262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d30.0259933!2d76.8434218!4m5!1s0x390e46c929dacd87%3A0x411dbf9c880cc833!2sPlot%20No%2C%20151%2C%20Industrial%20Area%20Rd%2C%20Sector%202%2C%20Kurukshetra%2C%20Haryana%20136118!3m2!1d29.968335999999997!2d76.887886!5e0!3m2!1sen!2sin!4v1745598356609!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d110604.37935422939!2d76.80548464584226!3d29.96831035874661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x390e46c929dacd87%3A0x411dbf9c880cc833!2sPlot%20No%2C%20151%2C%20Industrial%20Area%20Rd%2C%20Sector%202%2C%20Kurukshetra%2C%20Haryana%20136118!3m2!1d29.968335999999997!2d76.887886!5e0!3m2!1sen!2sin!4v1745825291628!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: "0" }}

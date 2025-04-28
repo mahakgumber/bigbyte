@@ -32,6 +32,12 @@ const Hero = () => {
           ideas into powerful digital experiences. With a focus on quality, creativity, and performance, we
           ensure every service we offer drives measurable growth for your business.
         </p>
+        <div className="text-start md:text-center lg:text-start mt-4">
+           <a href="contact-us"> <button className="bg-blue-950 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-800 transition-all duration-300">
+              Contact Us 
+            </button> 
+            </a>
+          </div>
       </div>
     </>
   );

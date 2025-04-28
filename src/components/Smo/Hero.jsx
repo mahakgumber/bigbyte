@@ -5,9 +5,9 @@ const Hero = () => {
     <>
       {/* Hero Section */}
       <div className='relative '>
-        <img src="/images/hero/sm1.jpeg" alt="" className='w-[100vw] h-[100vh] xs:w-[100vw]'/>
+        <img src="/images/hero/9583201.jpg" alt="" className='w-[100vw] h-[130vh] xs:w-[100vw]'/>
         <div className='xl:text-7xl absolute xl:top-80 xl:ml-16 xl:w-[40rem] text-[#0a243a] font-bold xs:text-3xl xs:w-48 xs:top-96 xs:ml-6 md:top-[40%] md:text-6xl md:w-[35rem] md:ml-16
-        tab:top-[40%] tab:text-7xl  '></div>
+        tab:top-[40%] tab:text-7xl right-0 pb-5'>Social Media Optimization</div>
       </div>
       {/* Description Section */}
       <div className="bg-white px-6 md:px-16 lg:px-24 py-12 space-y-6 text-gray-800">
@@ -24,6 +24,12 @@ const Hero = () => {
         <p className="text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed">
         <strong>GROW WITH THE POWER OF SOCIAL MEDIA</strong>
         </p>
+        <div className="text-start md:text-center lg:text-start mt-4">
+           <a href="contact-us"> <button className="bg-blue-950 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-800 transition-all duration-300">
+              Contact Us 
+            </button> 
+            </a>
+          </div>
       </div>
     </>
   );

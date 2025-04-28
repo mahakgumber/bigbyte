@@ -7,7 +7,7 @@ const list = [
   { name: "SEO", link: "/seo" },
   { name: "Web Development", link: "/web-development" },
   { name: "Digital Marketing", link: "/digital-marketing" },
-  { name: "Testing Services", link: "/testing-services" },
+  { name: "Testing Services", link: "/testing" },
   { name: "Social Media Optimization", link: "/social-media-optimization" },
 ];
 
