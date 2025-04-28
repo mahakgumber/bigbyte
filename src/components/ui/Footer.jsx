@@ -38,7 +38,7 @@ const Footer = () => {
             <div className="text-center tab:text-right">
               <p className="text-xl font-semibold mb-2">Subscribe</p>
               <div className="flex gap-3 justify-center tab:justify-end">
-                <input type="text" placeholder="E-mail" className="p-2 rounded-md w-56 xs:w-40 xl:w-52" />
+                <input type="text" placeholder="E-mail" className="p-2 rounded-md w-56 xs:w-40 xl:w-52 text-black" />
                 <button className="bg-white text-black px-4 rounded-md font-semibold">Subscribe</button>
               </div>
             </div>
@@ -67,9 +67,9 @@ const Footer = () => {
               <ul className="flex flex-col gap-2 font-medium">
                 <li><a href="">About Us</a></li>
                 <li><a href="">Contact Us</a></li>
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Refund and Returns Policy</a></li>
-                <li><a href="">Terms and Conditions</a></li>
+                <li><a href="/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/refund-and-return-policy">Refund and Returns Policy</a></li>
+                <li><a href="/terms-and-conditions">Terms and Conditions</a></li>
               </ul>
             </div>
 

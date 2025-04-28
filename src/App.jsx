@@ -16,6 +16,9 @@ import Financial from './Pages/Financial-Sector/Financial';
 import SMO from './Pages/SMO/SMO';
 import Log from "./Pages/Log-In/Log";
 import Test from "./Pages/Testing/Test"
+import Privacy from "./Pages/Privacy/Privacy"
+import Refund from './Pages/Refund-and-Return/Refund';
+import Terms from './Pages/Terms-and-Conditions/Terms';
 import './App.css'
 import VisitUs from './components/ui/VisitUs';
 
@@ -42,6 +45,9 @@ function App() {
         <Route path="/healthcare-sector" element={<Health />} />
         <Route path="/log-in" element={<Log />} />
         <Route path="/testing" element={<Test />} />
+        <Route path="/privacy-policy" element={<Privacy />} />
+        <Route path="/refund-and-return-policy" element={<Refund />} />
+        <Route path="/terms-and-conditions" element={<Terms />} />
       </Routes>
     </Router>
     </>
