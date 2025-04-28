@@ -12,26 +12,32 @@ const HowWeWork = () => {
         <div className='bg-blue-200 h-[300px] w-[20rem] text-center rounded-tl-3xl relative shadow-xl'>
         <hr className="border-t-2 border-blue-950 w-full mx-auto mt-28" />
         <div className='absolute bg-white top-[6rem] left-1/2 transform -translate-x-1 w-10 h-10 rounded-full text-center p-2 font-bold border-blue-950 border-l-2'>1</div>
-        <p className='mt-20 text-3xl font-semibold text-blue-950'>Discussion</p>
-        <a href="" className=' text-xl font-semibold text-blue-800'>Learn More ...</a>
+        <p className='mt-20 text-3xl font-semibold text-blue-950'> Ideas and Concepts</p>
+        {/* <a href="" className=' text-xl font-semibold text-blue-800'>Learn More ...</a> */}
         </div>
         <div className='bg-blue-300 h-[300px] w-[20rem] text-center relative shadow-xl'>
         <hr className="border-t-2 border-blue-950 w-full mx-auto mt-28 " />
         <div className='absolute bg-white top-[6rem] left-1/2 transform -translate-x-1 w-10 h-10 rounded-full text-center p-2 font-bold border-blue-950 border-l-2'>2</div>
-        <p className='mt-20 text-3xl font-semibold text-blue-950'>Ideas and Concepts</p>
-        <a href="" className=' text-xl font-semibold text-blue-800'>Learn More ...</a>
+        <p className='mt-20 text-3xl font-semibold text-blue-950'>Discussion</p>
+        {/* <a href="" className=' text-xl font-semibold text-blue-800'>Learn More ...</a> */}
         </div>
         <div className='bg-blue-400 h-[300px] w-[20rem] text-center relative shadow-xl'>
         <hr className="border-t-2 border-blue-950 w-full mx-auto mt-28 " />
-        <div className='absolute bg-white top-[6rem] left-1/2 transform -translate-x-1 w-10 h-10 rounded-full text-center p-2 font-bold border-blue-950 border-l-2'>3</div>
-        <p className='mt-20 text-3xl font-semibold text-blue-950'>Testing and Trying</p>
-        <a href="" className=' text-xl font-semibold text-blue-800'>Learn More ...</a>
+        <div className='absolute bg-white top-[6rem] left-1/2 transform -translate-x-1 w-10 h-10 rounded-full text-center p-2 font-bold border-blue-950 border-l-2'>2</div>
+        <p className='mt-20 text-3xl font-semibold text-blue-950'>Development</p>
+        {/* <a href="" className=' text-xl font-semibold text-blue-800'>Learn More ...</a> */}
         </div>
-        <div className='bg-blue-500 h-[300px] w-[20rem] text-center rounded-br-3xl relative shadow-xl'>
+        <div className='bg-blue-500 h-[300px] w-[20rem] text-center relative shadow-xl'>
+        <hr className="border-t-2 border-blue-950 w-full mx-auto mt-28 " />
+        <div className='absolute bg-white top-[6rem] left-1/2 transform -translate-x-1 w-10 h-10 rounded-full text-center p-2 font-bold border-blue-950 border-l-2'>3</div>
+        <p className='mt-20 text-3xl font-semibold text-blue-950'> Testing and Trying</p>
+        {/* <a href="" className=' text-xl font-semibold text-blue-800'>Learn More ...</a> */}
+        </div>
+        <div className='bg-blue-600 h-[300px] w-[20rem] text-center rounded-br-3xl relative shadow-xl'>
         <hr className="border-t-2 border-blue-950 w-full mx-auto mt-28 " />
         <div className='absolute bg-white top-[6rem] left-1/2 transform -translate-x-1 w-10 h-10 rounded-full text-center p-2 font-bold border-blue-950 border-l-2'>4</div>
         <p className='mt-20  text-3xl font-semibold text-blue-950'>Execute and Install</p>
-        <a href="" className=' text-xl font-semibold text-blue-800'>Learn More ...</a>
+        {/* <a href="" className=' text-xl font-semibold text-blue-800'>Learn More ...</a> */}
         </div>
       </div>
       </div>
