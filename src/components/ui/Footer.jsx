@@ -65,16 +65,11 @@ const Footer = () => {
             <div>
               <p className="font-bold text-2xl mb-3">Important Links</p>
               <ul className="flex flex-col gap-2 font-medium">
-                <li><a href="">About Us</a></li>
-                <li><a href="">Contact Us</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact-us">Contact Us</a></li>
                 <li><a href="/privacy-policy">Privacy Policy</a></li>
                 <li><a href="/refund-and-return-policy">Refund and Returns Policy</a></li>
                 <li><a href="/terms-and-conditions">Terms and Conditions</a></li>
-                <li><a href="about">About Us</a></li>
-                <li><a href="contact-us">Contact Us</a></li>
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Refund and Returns Policy</a></li>
-                <li><a href="">Terms and Conditions</a></li>
               </ul>
             </div>
 
