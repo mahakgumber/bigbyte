@@ -27,15 +27,15 @@ export const testimonials =[
     {
         quote:
         "Work enviorment is soo good.Very informative, competitive, good work culture, seniors are very good and supportive,",
-      name: "Puneet Sharma",
-      designation: "Manager",
+      name: "	Ajay Narula",
+      designation: "Akira Consulting(CEO)",
       src: "/images/test/te1.jpg",
     },
     {
         quote:
         "One of the best it company in Kurukshetra. Would recommend for website development and social media",
-      name: "Aditya Sharma",
-      designation: "Intern",
+      name: "Mr. Rajeev Sharma",
+      designation: "Managing Director,Chetanya",
       src: "/images/test/te5.jpg",
     },
 ]
