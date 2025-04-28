@@ -63,7 +63,9 @@ const Navbar3 = () => {
               Hire Top Talent
             </button>
             <button className="text-gray-700 font-medium hover:text-yellow-500 transition-all duration-300 ease-in-out transform hover:scale-105 lg:text-sm lg:font-bold lg:p-2 lg:w-20">
+              <a href="/log-in">
               Log In
+              </a>
             </button>
           </div>
 

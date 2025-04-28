@@ -6,7 +6,7 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className="bg-cyan-100 w-full">
+    <div className="bg-[#EFF6FF] w-full">
       {/* Top Section */}
       <div className="flex flex-col xl:flex-row items-center justify-between px-6 py-10 gap-6">
         <div className="flex flex-col items-center xl:items-start">

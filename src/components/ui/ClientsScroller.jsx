@@ -66,7 +66,7 @@ const ClientsScroller = () => {
     };
   
     return (
-        <div className="relative w-full py-10 bg-white text-center px-6 sm:px-12">
+        <div className="relative w-full py-10 bg-[#EFF6FF] text-center px-6 sm:px-12">
         <h2 className="text-5xl font-bold text-[#0a243a] mb-12">Our Clients</h2>
       
         <div className="relative flex items-center justify-center w-full">
