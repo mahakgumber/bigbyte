@@ -1,6 +1,7 @@
 import React from "react";
 import { useId } from "react";
 
+
 export function FeaturesSectionDemo() {
   return (
     <>
@@ -104,7 +105,9 @@ export const Grid = ({ pattern, size }) => {
   ]);
 
   return (
-    <div className="pointer-events-none absolute left-1/2 top-0 -ml-20  h-full w-full [mask-image:linear-gradient(white,transparent)]">
+    <>
+    <div className=" pointer-events-none absolute left-1/2 top-0 -ml-20  h-full w-full [mask-image:linear-gradient(white,transparent)]">
+      
       <div className="absolute inset-0 bg-gradient-to-r from-white/30 to-cyan-200/30 dark:from-white/30 dark:to-cyan-200/30 opacity-100">
         <GridPattern
           width={size ?? 20}
@@ -115,7 +118,9 @@ export const Grid = ({ pattern, size }) => {
           className="absolute inset-0 h-full w-full mix-blend-overlay fill-white/10 stroke-slate-700/10"
         />
       </div>
+      
     </div>
+    </>
   );
 };
 

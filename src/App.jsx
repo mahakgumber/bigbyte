@@ -21,11 +21,14 @@ import Refund from './Pages/Refund-and-Return/Refund';
 import Terms from './Pages/Terms-and-Conditions/Terms';
 import './App.css'
 import VisitUs from './components/ui/VisitUs';
+import {  HelmetProvider } from 'react-helmet-async';
+
 
 function App() {
 
   return (
     <>
+     <HelmetProvider>
    <Router>
       <Routes>
         <Route path="/" element={< Home/>} />
@@ -50,6 +53,7 @@ function App() {
         <Route path="/terms-and-conditions" element={<Terms />} />
       </Routes>
     </Router>
+    </HelmetProvider>
     </>
   );
 }
