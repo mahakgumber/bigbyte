@@ -23,7 +23,7 @@ function Home() {
     <SeoHelmet 
       title="Digital Marketing Agency in Kurukshetra-Big Byte World"
       description="Need a trusted digital marketing agency in Kurukshetra? Big Byte World offers cost-effective solutions to help you reach your audience and goals!"
-      keywords="react, homepage, awesome"
+      keywords="homepage,bigbyteworld,digitalagency"
     />
 
     <ToastContainer />
