@@ -37,7 +37,7 @@ const ContactUs = () => {
   };
   return (
     <>
-      <div className='contact-us container relative xl:mb-24 xs:mb-[32rem] md:mb-24 lg:mb-[18rem]'>
+      <div className=' contact-us container relative xl:mb-24 xs:mb-[32rem] md:mb-24 lg:mb-[18rem]'>
         <div className='bg-[#0a243a] w-[85%] h-[28rem] rounded-r-3xl shadow-2xl '>
          <div className='text-center '>
         <div className='p-7 '>
