@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar4 from '../../components/Navbar4'
+import Navbar3 from '../../components/Navbar3'
 import Hero from '../../components/Web-Development/Hero'
 // import Features from '../../components/Web-Development/Features'
 import Features1 from '../../components/Web-Development/Features1'
@@ -17,7 +17,7 @@ const Web = () => {
       description="BigByteWorld.com, Kurukshetra&#039;s top website development agency, creates stunning, user-friendly sites to help businesses grow. Get a free quote!"
       keywords="Web-Development-BigByteWorld"
     />
-      <Navbar4/>
+      <Navbar3/>
       <Hero/>
       {/* <Features/> */}
       <Features1/>

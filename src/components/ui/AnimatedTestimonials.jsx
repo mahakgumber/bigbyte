@@ -47,7 +47,6 @@
         <h2
           style={{
             fontSize: "2.5rem",
-            fontWeight: "bold",
             color: "#0a243a",
             marginBottom: "2rem",
             textAlign: "center",
@@ -124,7 +123,7 @@
                   <h3
                     style={{
                       color: "#0a243a",
-                      fontWeight: "bold",
+                      
                       fontSize: "1.5rem",
                       marginTop: "1rem",
                     }}

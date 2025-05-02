@@ -16,12 +16,15 @@ const Hero1 = () => {
           <div className="globe bg-white">
             <div className="heading ml-4 md:ml-8 mt-16 md:mt-10 xs:mt-10 lg:ml-0 lg:mt-48 animate-slideInFromTop">
               <div className="flex  items-center xs:gap-0">
-                <p className="font-extrabold text-3xl md:text-[80px] p-2 md:p-3 xs:text-[39px] lg:text-7xl ">BigByte World</p>
+                <p className="font-bold text-3xl md:text-[80px] p-2 md:p-3 xs:text-[39px] lg:text-7xl ">BigByte World</p>
                 <img src="public/gifs/Globe_ Animation.gif" alt="Globe" className="w-6 h-6 md:w-12 md:h-12 mt-2 md:mt-8 xs:mt-2 xs:w-10 xs:h-10" />
               </div>
               <div className="sub_heading mt-4">
-                <p className="font-bold text-lg md:text-3xl ml-2 md:ml-4 xs:mr-2 xs:mb-4 lg:ml-4">
+                <p className="font-base text-lg md:text-3xl ml-2 md:ml-4 xs:mr-2 xs:mb-4 lg:ml-4">
                   Delivering Quality Software Products and Premium IT Services Since 2013
+                </p>
+                <p className="font-base text-lg md:text-3xl ml-2 md:ml-4 xs:mr-2 xs:mb-4 lg:ml-4">
+                Tech with Trust
                 </p>
               </div>
             </div>

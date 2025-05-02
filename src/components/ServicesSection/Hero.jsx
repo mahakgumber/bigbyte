@@ -6,7 +6,7 @@ const Hero = () => {
       {/* Hero Section */}
       <div className="relative">
         <img 
-          src="/images/hero/d2.jpeg" 
+          src="/images/hero/services 1.jpeg" 
           alt="Hero Background" 
           className="w-[100vw] h-[100vh] object-cover xs:w-full xs:h-[100vh]"
         />
@@ -15,7 +15,7 @@ const Hero = () => {
           md:top-[40%] md:text-6xl md:w-[35rem] md:ml-16
           tab:top-[40%] tab:text-7xl
           xs:top-[65%] xs:text-3xl xs:w-48 xs:ml-6">
-          Your Success, Our Service Mission
+         
         </div>
       </div>
 

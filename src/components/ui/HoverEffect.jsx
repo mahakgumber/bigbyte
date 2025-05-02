@@ -9,7 +9,7 @@ export const HoverEffect = ({ items, className }) => {
     <>
       <div className="text-center mt-16 px-4 sm:px-6 md:px-8">
         <h3 className="text-2xl sm:text-3xl font-semibold">TECHNOLOGY INDEX</h3>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-950 mt-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl  text-blue-950 mt-4">
           Where Trust Meets <span className="text-[#ff9908]">Purpose</span>
         </h2>
       </div>
@@ -75,7 +75,7 @@ export const CardTitle = ({ className, children }) => {
   return (
     <h4
       className={cn(
-        "text-zinc-100 font-bold text-xl sm:text-2xl tracking-wide mt-4 text-center",
+        "text-zinc-100  text-xl sm:text-2xl tracking-wide mt-4 text-center font-base",
         className
       )}
     >
@@ -88,7 +88,7 @@ export const CardDescription = ({ className, children }) => {
   return (
     <div
       className={cn(
-        "mt-6 sm:mt-8 text-zinc-100 tracking-wide leading-relaxed text-sm sm:text-base text-center",
+        "mt-6 sm:mt-8 text-zinc-100 tracking-wide leading-relaxed  text-base relative z-20 text-center font-base",
         className
       )}
     >

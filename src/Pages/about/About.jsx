@@ -9,6 +9,7 @@ import SeoHelmet from '../../components/Helmet/SeoHelmet'
 const About = () => {
   return (
     <>
+    <title>hellow world</title>
     <SeoHelmet 
       title="About Us - Big Byte World"
       description="Big Byte Innovations Pvt Ltd - Leading IT &amp; Software company in India, specializing in software solutions, IT services, digital marketing &amp; web technologies."
