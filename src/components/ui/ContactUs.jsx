@@ -68,7 +68,7 @@ const ContactUs = () => {
                     <div className=''>
                         <p className='font-medium text-2xl text-[#0a243a]'>Call us</p>
                         <p className='font-semibold'>+91 94661 94004</p>
-                        <p className='font-semibold'>+91 87080 42248</p>
+                        <p className='font-semibold'>+91 92157 15723</p>
                     </div>
                     <div className=' flex flex-row gap-14 xl:ml-2 xl:mt-8 xs:ml-20 lg:ml-2 s:ml-40  tab:ml-10 md:ml-0 '>
                     <a href="https://www.facebook.com/BigByteTechnologies/"> <FaFacebook className="w-7 h-7" /></a>
