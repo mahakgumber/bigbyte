@@ -6,7 +6,7 @@ const Hero = () => {
       {/* Hero Section */}
       <div className="relative">
         <img 
-          src="/images/hero/services 1.jpeg" 
+          src="/images/hero/service10.jpeg" 
           alt="Hero Background" 
           className="w-[100vw] h-[100vh] object-cover xs:w-full xs:h-[100vh]"
         />
