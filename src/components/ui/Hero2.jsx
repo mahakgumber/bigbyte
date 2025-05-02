@@ -12,7 +12,7 @@ const Hero2 = () => {
             BigByte World
           </h1>
           <img
-            src="public/gifs/Globe-Animation-unscreen.gif"
+            src="public/gifs/reduced-globe.gif"
             alt="Globe"
             className="w-6 h-6 md:w-12 md:h-12 mt-2 md:mt-6 xs:mt-2 xs:w-10 xs:h-10 "
           />
